@@ -13,6 +13,10 @@ Beige: #EDE0D2
   box-sizing: border-box;
 }
 
+[class*="grid-"], [class*="grid_"], [class~="grid"] {
+    margin:0;
+}
+
 body {
   font-family: 'Catamaran', sans-serif;
   color: rgb(60,60,65);
@@ -48,7 +52,7 @@ a {
     .subtitle {
         font-size: 1.2rem;
         color: #9C9C82;
-}
+  }
 
   .padded    {  padding: 5%;    }
   .padded-lg {  padding: 10%;    }
@@ -137,6 +141,12 @@ a {
       text-transform: uppercase;
       font-size: 0.9rem;
       font-weight: 500;
+    }
+
+    .centered-button{
+        text-align: center;
+        display: flex;
+        justify-content: center;
     }
 
     .button:hover {

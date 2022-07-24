@@ -10,10 +10,10 @@
         <!-- This is Gridlex -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
 
-        <!-- This is our google font - Raleway 300, 400, 500, 900 -->
+        <!-- This is our google font - catamaran 200, 400, 500, 800 -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,900;1,300;1,400;1,500;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&family=Work+Sans:ital,wght@0,200;0,400;0,800;1,200;1,400;1,800&display=swap" rel="stylesheet">
 
         <!-- This is our font awesome icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -27,11 +27,11 @@
     <body>
 
         <!---------------------------- This is the Header ---------------------------->
-        <header class="grid-spaceAround-middle">
-            <div class="col-3">
+        <header class="grid-spaceBetween-middle bg-light">
+            <div class="col-3 padded-1">
                 <h1> LOGO </h1>
             </div>
-            <nav class="col-4">
+            <nav class="col-5 padded-1 right">
                 <a href="#"> Home </a>
                 <a href="#"> About </a>
                 <a href="#"> Portfolio </a>
@@ -41,36 +41,39 @@
         </header>
     
         <!------------------------- This is the Intro Section ------------------------->
-        <section class="grid">
-            <div class="col-5">
+        <section class="grid bg-dark white-text">
+            <div class="col-5 padded">
                 <h2> Meet Our Growing Family </h2>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, hic, tempora quas dolores ad possimus accusantium ipsum iusto neque rerum velit labore repudiandae ex voluptates officiis libero consectetur pariatur nobis.</p>
             </div>
-            <div class="col-7 bg-image"></div>
+            <div class="col-7 bg-image bg-2-men"></div>
         </section>
 
         <!------------------------- This is the Team Section ------------------------->
-        <section class="grid">
-            <div class="col-5 bg-image bg-circle"></div>
-            <div class="col-7">
+        <section class="grid padded-2">
+            <div class="col-3"></div>
+            <div class="col-3-middle bg-image bg-andy bg-circle tall-30"> </div>
+            <div class="col-6-middle padded-2">
                 <h2> Meet Andy </h2>
                 <h4> The Biggie Boss </h4>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, hic, tempora quas dolores ad possimus.</p>
             </div>
         </section>
 
-        <section class="grid">
-            <div class="col-7">
+        <section class="grid padded-2">
+            <div class="col-6-middle right padded-2">
                 <h2> Meet Samson </h2>
                 <h4> The Brains </h4>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, hic, tempora quas dolores ad possimus.</p>
             </div>
-            <div class="col-5 bg-image bg-circle"></div>
+            <div class="col-3-middle bg-image bg-samson bg-circle tall-30"> </div>
+            <div class="col-3"></div>
         </section>
 
-        <section class="grid">
-            <div class="col-5 bg-image bg-circle"></div>
-            <div class="col-7">
+        <section class="grid padded-2">
+            <div class="col-3"></div>
+            <div class="col-3-middle bg-image bg-otto bg-circle tall-30"> </div>
+            <div class="col-6-middle padded-2">
                  <h2> Meet Otto </h2>
                 <h4> The Creative </h4>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, hic, tempora quas dolores ad possimus.</p>
@@ -78,21 +81,41 @@
         </section>
 
         <!------------------------- This is the Banner ------------------------->
-        <section class="bg-image">
+        <section class="bg-image bg-working padded-lg white-text center">
             <div>
-                <h2> Let our creativity work for you. </h2>
-                <h3> A holistic approach to web design and developmet </h3>
+                <h2> Let our inspiration work for you. </h2>
+                <h3> A holistic approach to web design and development </h3>
             </div>
         </section>
 
+        <!------------------------------------ Features Icon Grid --------------------------->
+        <section class="padded grid bg-dark">
+            <div class="padded-sm col-12">
+                <h2 class="light-text"> Packages you'll love</h2>
+            </div>
+            <div class="padded-sm col-4">
+                <h3> Design. </h3>
+                <p class="editable"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione a ducimus soluta laboriosam ea sed iure, nam ipsam, quam tempora aliquid vel maxime error eligendi consectetur ullam quas pariatur voluptatum!</p>
+            </div>
+            <div class="padded-sm col-4">
+                <h3> Build. </h3>
+                <p class="editable"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit cupiditate quasi magni! Doloremque necessitatibus enim unde voluptates, quos possimus quae eaque impedit perspiciatis aspernatur animi praesentium maiores ipsam temporibus eligendi?</p>
+            </div>
+            <div class="padded-sm col-4">
+                <h3> Design & Build. </h3>
+                <p class="editable"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit id dolorum placeat, in sint incidunt commodi numquam magni laudantium autem corporis, impedit ad qui, totam quis soluta dignissimos suscipit consequatur?</p>
+            </div>
+            <a href="#" class="button-inverted"> Learn more </a>
+        </section>  
+
         <!------------------------- This is the Testimonial------------------------->
-        <section class="grid padded-lg">
+        <section class="grid bg-light padded">
             <div class="col-1 text-right">
               <span class="quote-icon">“</span>
             </div> 
-            <div class="col-10 text-center">
-              <p class="medium-text font-weight-light editable"> Working at LOGO has really brought out my creative side. I love collaborating with entrepreneurs and small business owners to make their visions come to life! </p>
-              <p class="subtitle"> - Otto </p>
+            <div class="col-10 center">
+              <p class="medium-text font-weight-light editable"> Working at LOGO has allowed me to use my creativity in unique ways. I love collaborating with entrepreneurs and small business owners to make their visions come to life. </p>
+              <p class="subtitle"> - Otto, Creative Team of LOGO </p>
             </div>
             <div class="col-1">
               <span class="quote-icon">"</span>
@@ -100,9 +123,9 @@
           </section>
         
         <!------------------------- This is the Banner ------------------------->
-        <section class="bg-medium">
+        <section class="bg-featured white-text padded center">
             <div>
-                <h3> Sign up for our newsletter to get early access to our free design resources. > </h3>
+                <h4 class="font-weight-normal"> Sign up for our newsletter to get access to our free design resources. <a href="#"> &#10230; </a> </h4>
             </div>
         </section>
 
@@ -110,9 +133,9 @@
         <footer class="grid bg-dark light-text">
             
             <div class="col-6-bottom">
-                <h2 class="logo"> LOGO </h2>
+                <h2 class="logo padded-2"> LOGO </h2>
             </div>
-            <nav class="col-6-bottom right">
+            <nav class="col-6-bottom right padded-2">
                 <h4> Let's Connect </h4>
                 <p> <a href="#"> Dubai, UAE </a></p>
                 <p> <a href="mailto:hello@logo.com"> hello@logo.com </a></p>

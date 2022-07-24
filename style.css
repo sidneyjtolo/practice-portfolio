@@ -1,0 +1,225 @@
+/* 
+Colors:
+Dark Olive: #575a4d
+Olive Green: #9C9C82
+Rust :#A3755B
+Beige: #EDE0D2
+*/
+  
+  
+* {
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Catamaran', sans-serif;
+  color: rgb(60,60,65);
+}
+
+img {
+  max-width:100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ------------- Utility Classes --------------  */
+
+  .left     {  text-align: left;     }
+  .right    {  text-align: right;    }
+  .center   {  text-align: center;   }
+
+  .font-weight-light       { font-weight: 200;}
+  .font-weight-normal      { font-weight: 400;}
+  .font-weight-bold        { font-weight: 500;}
+  .font-weight-extra-bold  { font-weight: 800;}
+
+  .small-text                { font-size: 1rem; }
+  .medium-text                { 
+      font-size: 2.2rem; 
+      line-height: 1.1;
+  }
+    .big-text                  { font-size: 5rem; }
+
+    .subtitle {
+        font-size: 1.2rem;
+        color: #9C9C82;
+}
+
+  .padded    {  padding: 5%;    }
+  .padded-lg {  padding: 10%;    }
+  .padded-05 {  padding: 0.5rem;  }
+  .padded-1  {  padding: 1rem;  }
+  .padded-2  {  padding: 2rem;  }
+
+  .padding-l-0 {  padding-left: 0;   }
+  .padding-r-0 {  padding-right: 0;  }
+
+  .capped-width { max-width: 1100px; margin: auto;}
+
+  .tall-30  {  max-height: 30vh;   }
+  .tall-50  {  min-height: 50vh;   }
+  .tall-100 {  min-height: 100vh;  }
+
+  .bg-dark      {  background-color: #9C9C82;  }
+  .bg-light     {  background-color: #EDE0D2;  }
+  .bg-featured  {  background-color: #A3755B;  }
+
+  .white-text   { color: whitesmoke; }
+  .light-text   { color: #EDE0D2; }
+  .dark-text    { color: #575a4d  }
+  .caps         {text-transform: uppercase; }
+
+
+  .flex-flip:nth-child(2n){  flex-direction: row-reverse; }
+
+    /* General typography */
+
+    h2, h3, h4, h5, h6 {
+    line-height: 1;
+    margin-bottom: 0.8rem;
+    }
+
+    h2  { font-size: 2.2rem;  }
+    h3  { font-size: 1.8rem;  }
+    h4  { font-size: 1.4rem;  }
+    p   { font-size: 1rem;  }
+
+    p, ul {
+     margin-bottom: 0.8rem;
+    }
+
+    /* this makes sure that the last element in any container doesn't have margin-bottom */
+    h2:last-child,
+    h3:last-child,
+    h4:last-child,
+    h5:last-child,
+    h6:last-child,
+    p:last-child {
+    margin-bottom:0;
+    }
+
+    hr { /* this is a line element */
+    border: none;
+    border-bottom: 3px solid;
+    width: 4rem;
+    margin-bottom: 1rem;
+    }
+
+
+    /* Unique Typography Styles */
+
+    .emphasis {
+      font-size: 1.2rem;
+    }
+
+    /* Button & Link Styles */
+
+
+    a:hover {
+        color: #9C9C82;
+    }
+    /* Buttons */
+
+    .button,
+    .button-solid,
+    .button-inverted {
+      text-decoration: none;
+      color: rgb(120,120,130);
+      border: 2px solid;
+      padding: 0.6rem 2rem;
+      margin-top: 1rem;
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .button:hover {
+      color: #575a4d;
+    }
+
+    .button-inverted {   /* this is for a button on a dark background */
+      border: 2px solid #EDE0D2;
+      color: #EDE0D2;
+    }
+
+    .button-inverted:hover {
+      color: #575a4d;
+      border-color: #575a4d;
+    }
+
+    .button-solid {
+      background-color: #575a4d;
+      border-color: #575a4d;
+      color: white;
+    }
+
+    .button-solid:hover {
+      background-color: #A3755B;
+      border-color: #A3755B;
+    }
+
+    /* Background Images */
+.bg-image {
+    background-color: #24282B;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/images/practice-portfolio-working.jpg);
+}
+
+.bg-padded { 
+    padding-bottom: 30%; 
+}
+
+.bg-andy {
+    background-image: url(/images/practice-portfolio-Andy.jpg);
+}
+.bg-samson {
+    background-image: url(/images/practice-portfolio-Samson.jpg);
+}
+.bg-otto {
+    background-image: url(/images/practice-portfolio-Otto.jpg);
+}
+.bg-working {
+    background-image: url(/images/practice-portfolio-working.jpg);
+}
+.bg-man {
+    background-image: url(/images/practice-portfolio-5.jpg);
+}
+.bg-2-men {
+    background-image: url(/images/practice-portfolio-6.jpg);
+}
+
+.bg-circle {
+    border-radius: 100%;
+    padding-bottom: 25%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Background Position */
+.bg-pos-t { background-position: top;    }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left;   }
+.bg-pos-r { background-position: right;  }
+
+/* Nitty Gritty */
+
+header nav a {
+    padding: 0.2rem;
+    margin: 0.1rem;
+}
+
+.quote-icon {
+    font-size: 6rem;
+    display: inline-block;
+    color: #9C9C82;
+    line-height: 1;
+}
